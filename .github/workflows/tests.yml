@@ -1,18 +1,8 @@
-<<<<<<< HEAD
 name: Run tests
 
 on:
   push:
   pull_request:
-=======
-name: Run Tests
-
-on:
-  pull_request:
-  push:
-    branches:
-      - main
->>>>>>> origin/main
 
 jobs:
   test:
@@ -25,15 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-<<<<<<< HEAD
           python-version: "3.x"
 
       - name: Run tests
         run: python -m unittest discover -v
-        
-=======
-          python-version: "3.12"
-
-      - name: Run tests
-        run: python -m unittest discover -v
->>>>>>> origin/main
